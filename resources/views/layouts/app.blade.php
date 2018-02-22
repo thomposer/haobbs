@@ -18,6 +18,10 @@
         </div>
         @include('layouts._footer')
     </div>
+
+    @if (app()->isLocal())
+        @include('sudosu::user-selector')
+    @endif
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
     @yield('scripts')
 </body>
