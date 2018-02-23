@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', 'LaraBBS') - Laravel 进价</title>
+    <meta name="description" content="@yield('description', setting('seo_description', 'HaoBBS 房产系统'))">
+    <meta name="keyword" content="@yield('keyword', setting('seo_keyword', 'HaoBBS,房产,音乐,地产'))">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
     @yield('styles')
 </head>
